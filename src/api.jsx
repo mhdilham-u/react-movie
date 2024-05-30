@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const getMovieList = async () => {
-    const movie = await axios.get(`${import.meta.env.VITE_BASE_URL}/movie/top_rated?page=1&api_key=${import.meta.env.VITE_API_KEY}`)
+    const movie = await axios.get(`${import.meta.env.VITE_BASE_URL}/movie/popular?page=1&api_key=${import.meta.env.VITE_API_KEY}`)
     // console.log({movieList: movie})
     // return
     return movie.data.results
